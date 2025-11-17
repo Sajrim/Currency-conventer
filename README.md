@@ -1,4 +1,3 @@
-https://sajrim.github.io/Currency-conventer/
 # Currency conventer 
 
 ## **Link to the website:**
