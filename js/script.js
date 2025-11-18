@@ -4,32 +4,22 @@
         const plnToUsd = 0.2748;
         const usdToEur = 0.8609;
 
-        let rate;
-
         switch (currencyChange) {
             case "PLN/EUR":
-                rate = plnToEur;
-                break;
+                return plnToEur;
             case "PLN/USD":
-                rate = plnToUsd;
-                break;
+                return  plnToUsd;
             case "EUR/PLN":
-                rate = 1 / plnToEur;
-                break;
+                return  1 / plnToEur;
             case "EUR/USD":
-                rate = 1 / usdToEur;
-                break;
+                return  1 / usdToEur;
             case "USD/EUR":
-                rate = usdToEur;
-                break;
+                return usdToEur;
             case "USD/PLN":
-                rate = 1 / plnToUsd;
-                break;
+                return  1 / plnToUsd;
             default:
-                rate = 1;
+                return  1;
         }
-
-        return rate;
     };
 
     const updateResultText = (result, secondCurrency, amountElement, firstCurrency) => {
