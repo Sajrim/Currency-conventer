@@ -3,7 +3,8 @@
 ## **Link to the website:**
 [https://sajrim.github.io/Currency-conventer/](https://sajrim.github.io/Currency-conventer/)
 
-![presentation](https://github.com/user-attachments/assets/d4e9d8f7-c891-4f43-b78a-76a42e23f8d9)
+![presentation](https://github.com/user-attachments/assets/f563eb48-283b-4844-9f5a-ce6bd42e8edc)
+
 
 ## The website is in polish language. Allowes you to choose out of bunch curriencies to convert the value from one to another.
 
