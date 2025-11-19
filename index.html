@@ -20,59 +20,59 @@
 </head>
 
 <body class="body">
+    <div class="body__container">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Przelicznik walut</legend>
 
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Przelicznik walut</legend>
+                <p class="form__group">
+                    <label class="form__label">
+                        <span class="form__label-text">Podaj ilość:</span>
+                        <input class="form__field js-amount" min="0" name="amount" placeholder="Wpisz kwotę" autofocus
+                            type="number" required step="0.01">
+                    </label>
+                </p>
 
-            <p class="form__group">
-                <label class="form__label">
-                    <span class="form__label-text">Podaj ilość:</span>
-                    <input class="form__field js-amount" min="0" name="amount" placeholder="Wpisz kwotę" autofocus
-                        type="number" required step="0.01">
-                </label>
+                <p class="form__group">
+                    <label class="form__label">
+                        <span class="form__label-text">Waluta:</span>
+                        <select class="form__field js-firstCurrency">
+                            <option value="EUR">Euro</option>
+                            <option value="USD">Dolar</option>
+                            <option value="PLN" selected>Złoty</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p class="form__group">
+                    <label class="form__label">
+                        <span class="form__label-text">Wymieniasz na:</span>
+                        <select class="form__field js-secondCurrency">
+                            <option value="EUR" selected>Euro</option>
+                            <option value="USD">Dolar</option>
+                            <option value="PLN">Złoty</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p class="form__group">
+                    <button class="form__button">Przelicz</button>
+                </p>
+
+            </fieldset>
+
+            <p class="form__result">
+                <strong class="js-index form__result-index"></strong>
+                <strong class="js-result form__result-value"></strong>
             </p>
 
-            <p class="form__group">
-                <label class="form__label">
-                    <span class="form__label-text">Waluta:</span>
-                    <select class="form__field js-firstCurrency">
-                        <option value="EUR">Euro</option>
-                        <option value="USD">Dolar</option>
-                        <option value="PLN" selected>Złoty</option>
-                    </select>
-                </label>
-            </p>
+        </form>
 
-            <p class="form__group">
-                <label class="form__label">
-                    <span class="form__label-text">Wymieniasz na:</span>
-                    <select class="form__field js-secondCurrency">
-                        <option value="EUR" selected>Euro</option>
-                        <option value="USD">Dolar</option>
-                        <option value="PLN">Złoty</option>
-                    </select>
-                </label>
-            </p>
-
-            <p class="form__group">
-                <button class="form__button">Przelicz</button>
-            </p>
-
-        </fieldset>
-
-        <p class="form__result">
-            <strong class="js-index form__result-index"></strong>
-            <strong class="js-result form__result-value"></strong>
-        </p>
-
-    </form>
-
-    <footer class="footer">
-        <p>&copy; Dane kursu walut pochodzą ze strony www.monito.com/najkorzystniejsze-kursy-wymiany/rub/usd, dnia
-            16.11.2025r</p>
-    </footer>
-
+        <footer class="footer">
+            <p>&copy; Dane kursu walut pochodzą ze strony www.monito.com/najkorzystniejsze-kursy-wymiany/rub/usd, dnia
+                16.11.2025r</p>
+        </footer>
+    </div>
 </body>
 
 </html>
